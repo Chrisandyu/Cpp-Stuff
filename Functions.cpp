@@ -2,17 +2,19 @@
 
 using namespace std;
 
-void happyBirthday(){
+void happyBirthday(string name, int age){
     for(int i = 0; i < 3; i++){
-        cout << "Happy Birthday to you!" << endl;
+        cout << "Happy Birthday to " << name << endl;
+        cout << "You are " << age << " years old!" << endl;
     }
 }
 
 int main(){
 
-    happyBirthday();
-    happyBirthday();
-    happyBirthday();
+    string name = "chris";
+    int age = 14;
+
+    happyBirthday(name, age);
 
     return 0;
 }
